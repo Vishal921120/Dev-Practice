@@ -1,0 +1,44 @@
+<script>
+    // The javascript this keyword refers to the object it belongs to.
+
+    //1. Alone, this refers to the global object.
+    // console.log(this); // window output like in output.txt
+
+    //2. In a regular fn , this refers to the global object.
+
+    // function sum() {
+    // let add = 2 + 2;
+    // console.log(add);
+    // console.log(this); // window output like in output.txt
+    // }
+
+    // sum();
+
+    //3. In a method , this refers to the owner object.
+
+    // let obj = {
+    //     name: "vis",
+    //     class: "not any",
+    //     fn: function () {
+    //         console.log(this); //output = {name: 'vis', class: 'not any', fn: ƒ}
+    //         console.log(this.class); //output = not any
+    //     }
+    // }
+
+    // obj.fn();
+
+    //4. IN a function , in strict mode, this is undefined.
+
+    "use strict"
+    console.log(this); // still window output 
+
+    // but for a fn without any object it will give undefined
+    function sum() {
+        let add = 2 + 2;
+        console.log(add);
+        console.log(this); // output = undefined
+    }
+
+    sum();
+
+</script>

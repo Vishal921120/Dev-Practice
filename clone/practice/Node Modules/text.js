@@ -1,0 +1,1 @@
+console.log('open me using execSync')
