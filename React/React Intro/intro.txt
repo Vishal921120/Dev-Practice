@@ -1,0 +1,24 @@
+React is a Js library which is used to develop UI or fronted.
+It is developed by facebook 
+React algo (diffing algo) helps to identify the changes in virtual dom and then 
+render only those changes without making a different new dom
+benifits
+1. very fast
+2. easy event handling
+3. it has a very small library
+4. it manage UI by states
+
+Components - It is basically isolated , resuable , independent piece of code.
+2 types of Components 
+1 functional Components = used for static ui (but now with the help of hooks and states we can make dynamic ui also)
+2 class Components = used for dynamic ui
+
+Jsx(javascript xml) = html + js 
+
+Rules for Jsx
+what is not allowed 
+-> no variable declartion
+-> no fuction declartion
+-> no loops allowed => sol => map and filter
+-> if else not allowed => sol => teranary operator
+-> cannot render object => sol => Array render 
