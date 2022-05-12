@@ -33,9 +33,9 @@ export class EventHandler extends Component {
           {/* Method 2. use arrow function  */}
           {/* <button onClick={() => this.eventHandler()}>Click</button> */}
           {/* Method 3. bind this in constructor and use it here normally */}
-          {/* <button onClick={this.eventHandler()}>Click</button> */}
+          {/* <button onClick={this.eventHandler}>Click</button> */}
           {/* Method 4. Make your function as an arrow function  */}
-          <button onClick={this.eventHandler()}>Click</button>
+          <button onClick={this.eventHandler}>Click</button>
 
 
       </div>
