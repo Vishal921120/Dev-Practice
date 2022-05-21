@@ -1,5 +1,5 @@
-//Always import react and its component in every component file
-// for returning multiple div we need to enclose all in a single div
+//Always import react and its component in every class component file
+// for returning multiple div we need to enclose all in a single div or a wrapper.
 //Always have name of component starting with capital letters
 import React, { Component } from 'react'
 
