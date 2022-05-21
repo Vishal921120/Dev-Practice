@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag is very important for using media queries -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Document</title>
+    <style>
+        .parentDiv {
+            margin-top: 190px;
+            margin-left: 300px;
+            background-color: blue;
+            border: 5px solid yellow;
+            border-radius: 15px;
+            width: 50vw;
+            height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            /* For aligning hoizontally use justify-content  */
+            justify-content: space-between;
+            /* For aligning vertically use justify-content  */
+            align-items: center;
+
+        }
+
+        div.childDiv {
+            background-color: aliceblue;
+            width: 10%;
+            height: 10%;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid black;
+            animation: myanimation 1s infinite;
+        }
+
+        @keyframes myanimation {
+
+            /* from {background-color: pink} */
+            to {
+                background-color: white;
+            }
+
+            /* from {width: 10%;} */
+            to {
+                width: 20%;
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media only screen and (max-width : 400px) {
+            .parentDiv {
+                margin-top: 190px;
+                margin-left: 50px;
+                background-color: red;
+                border: 5px solid yellow;
+                border-radius: 15px;
+                width: 50vw;
+                height: 50vh;
+                display: flex;
+                flex-wrap: wrap;
+                /* For aligning hoizontally use justify-content  */
+                justify-content: space-between;
+                /* For aligning vertically use justify-content  */
+                /* align-items: center; */
+
+            }
+
+            div.childDiv {
+                width: 10%;
+                height: 10%;
+                margin: 2px;
+                padding: 2px;
+                border: 1px solid black;
+                animation: myanimation2 5s infinite;
+            }
+
+            @keyframes myanimation2 {
+
+                /* from {background-color: pink} */
+                to {
+                    background-color: white;
+                }
+
+                /* from {width: 10%;} */
+                to {
+                    width: 20%;
+                }
+
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentDiv">
+        <div class="childDiv" style="background-color: orange;"></div>
+        <div class="childDiv" style="background-color: pink;"></div>
+        <div class="childDiv" style="background-color: gold;"></div>
+        <div class="childDiv" style="background-color: orangered;"></div>
+        <div class="childDiv" style="background-color: orange;"></div>
+        <div class="childDiv" style="background-color: pink;"></div>
+        <div class="childDiv" style="background-color: gold;"></div>
+        <div class="childDiv" style="background-color: orangered;"></div>
+        <div class="childDiv" style="background-color: orange;"></div>
+        <div class="childDiv" style="background-color: pink;"></div>
+        <div class="childDiv" style="background-color: gold;"></div>
+        <div class="childDiv" style="background-color: orangered;"></div>
+        <div class="childDiv" style="background-color: orange;"></div>
+        <div class="childDiv" style="background-color: pink;"></div>
+        <div class="childDiv" style="background-color: gold;"></div>
+        <div class="childDiv" style="background-color: orangered;"></div>
+    </div>
+
+</body>
+
+</html>

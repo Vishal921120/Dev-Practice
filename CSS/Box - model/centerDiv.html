@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parentDiv {
+            background-color: blue;
+            width: 50vw;
+            height: 50vh;
+            position: relative;
+            display: flex;
+            /* For aligning hoizontally use justify-content  */
+            justify-content: center; 
+            /* For aligning vertically use justify-content  */
+            align-items: center;
+
+        }
+        .childDiv {
+            background-color: aliceblue;
+            width: 10%;
+            height: 10%;
+            position: absolute;
+            margin: 2px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="parentDiv">
+        <div class="childDiv"></div>
+    </div>
+    
+</body>
+</html>
