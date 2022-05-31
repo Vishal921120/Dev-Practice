@@ -1,13 +1,11 @@
 import './App.css';
-import NameList from './Components2/List/NameList';
-import PersonList from './Components2/List/PersonList';
+import LifecycleA from './Components2/LifeCycle methods/LifecycleA';
 
 
 function App() {
   return (
     <div className='App'>
-      <NameList/>
-      {/* <PersonList/> */}
+       <LifecycleA/>
     </div>
   );
 }

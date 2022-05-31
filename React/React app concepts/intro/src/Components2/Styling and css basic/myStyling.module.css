@@ -1,0 +1,12 @@
+.example {
+    color : gray;
+}
+
+/* This is way of importing module css */
+/* import styles from './Components2/Styling and css basic/myStyling.module.css' */
+
+/* Way of using it in html  */
+/* <h1 className={styles.example}>Hello</h1> */
+
+/* The advantage of using module.css is that we can avoid passing our css to our childcomponets
+By using module.css only that component will have the access of styles which are importing it . */
