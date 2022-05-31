@@ -11,3 +11,8 @@ export class Welcome extends Component {
 }
 
 export default Welcome
+
+// in app.js 
+{/* <Welcome name="Raju" class="XIdfadadf">
+          <button>I am button</button>
+        </Welcome> */}

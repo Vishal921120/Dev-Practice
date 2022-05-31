@@ -10,3 +10,9 @@ export default function Greet(props) {
       </div>
   )
 }
+
+
+// in App.js
+{/* <Greet name="Vis" classNo="XIadf">
+        <button>I am button</button> // this is our children
+</Greet> */}
