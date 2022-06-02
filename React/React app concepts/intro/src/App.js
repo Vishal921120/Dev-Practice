@@ -1,23 +1,15 @@
 import './App.css';
-import FocusInput from './Components2/9. Refs/FocusInput';
-import PortalDemo from './Components2/11. Portals/PortalDemo';
-import Hero from './Components2/10. Error Handling/Hero';
-import ErrorBoundary from './Components2/10. Error Handling/ErrorBoundary';
+import ComponentA from './Components2/14. Context/ComponentA';
+import { UserProvider } from './Components2/14. Context/userContext';
+import PostForm from './Components2/15. HTTP Axios/PostForm';
+import PostList from './Components2/15. HTTP Axios/PostList';
+
 
 
 function App() {
   return (
     <div className='App'>
-
-      <ErrorBoundary>
-        <Hero heroName= "Batman"/>
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName= "Superman"/>
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName= "joker"/>
-      </ErrorBoundary>
+      <PostForm/>
     </div>
   );
 }

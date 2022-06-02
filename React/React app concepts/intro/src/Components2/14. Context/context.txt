@@ -1,0 +1,33 @@
+context provides a way  to pass data throught the component tree without having to pass props down manullay at every level
+
+3 steps for creating context
+1. Create context
+
+import React from "react";
+
+const UserContext = React.createContext();
+
+const UserProvider = UserContext.Provider
+const UserConsumer = UserContext.Consumer
+
+export {UserProvider, UserConsumer}
+
+
+2. provide context value 
+
+<UserProvider value="Vishal">
+        <ComponentA/>
+      </UserProvider>
+
+
+3. consume context value 
+
+<UserConsumer>
+                {
+                    username => {
+                        return (
+                            <div>hello {username}</div>
+                        )
+                    }
+                }
+</UserConsumer>
