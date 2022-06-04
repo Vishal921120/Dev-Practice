@@ -1,0 +1,27 @@
+The effect hooks lets you perform side effects in functional components 
+It is a close replacement for componentDidMount,didUpdate,willUnmount
+
+
+take an example of class component life cycle method
+
+componentDidMount(){
+    document.title = `You clicked ${this.state.count} times`;
+    this.interval = setInterval(this.tick , 1000)
+}
+
+componentDidUpdate() {
+    document.title = `You clicked ${this.state.count} times`;
+}
+
+componentWillUnmount() {
+    clearInterval(this.interval)
+}
+
+Here is first thing to observe 
+-- To update the document title we are writing the same code twice
+once in componentDidMount and another in componentDidUpdate
+
+Second thing to observe
+-- The code setInterval and clearInterval which are related are put into differnt code blocks
+-- The code to update the dom and setInterval put together whicha are completely unrelated are put together
+

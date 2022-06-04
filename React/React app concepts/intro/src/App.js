@@ -1,15 +1,14 @@
 import './App.css';
-import ComponentA from './Components2/14. Context/ComponentA';
-import { UserProvider } from './Components2/14. Context/userContext';
-import PostForm from './Components2/15. HTTP Axios/PostForm';
-import PostList from './Components2/15. HTTP Axios/PostList';
-
-
+import ClassCounterOne from './Hooks/UseEffect/ClassCounterOne';
+import ClassMouse from './Hooks/UseEffect/ClassMouse';
+import HookCounter2 from './Hooks/UseEffect/HookCounter2';
+import HookCounterOne from './Hooks/UseEffect/HookCounterOne';
+import HookMouse from './Hooks/UseEffect/HookMouse';
 
 function App() {
   return (
     <div className='App'>
-      <PostForm/>
+      <HookMouse/>
     </div>
   );
 }

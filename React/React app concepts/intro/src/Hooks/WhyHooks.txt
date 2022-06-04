@@ -1,0 +1,20 @@
+Why Hooks 
+1. Reason Set 1
+Understand how this keyword works in js . Avoid the whole confusion with 'this' keyword if uses hooks
+Remember to bind handlers in class components 
+Classes don't minify very well and make hot reloading very unreliable
+
+2. Reason set 2 
+there is no particular way to reuse stateful component logic
+Hoc and render props patterns do address this problem
+Makes the code harder to follow
+there is need a to share stateful logic in a better way
+
+3. Reason set 3
+Create component for complex secnarios such as data fetching and subscribing to events
+Related code is not organized in one place 
+Ex. Data fetching - In componentDidMount and componentDidUpdate
+ex: Event listeners - In componentDidMount and componentWillUnmount
+Because of stateful logic - cannot break component into smaller ones
+
+Noteworthy Points 
