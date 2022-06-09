@@ -23,13 +23,13 @@ if (true) console.log("hello") // this code is perfectly fine
 // that's why we get a statement that let and const are blocked scope
 // when our code reaches line no. 21 means outside the block then we cannot access let and const now
 // and our block scope also disappear from the inspect-> scope
-// whereas we can access a outside block because it is inside the global object
+// whereas we can access var a outside block because it is inside the global object
 
 // Very intersting point is coming here
 // shadowing
 var x = 10; // original
 {
-    var x = 20; // here our x is shodowed and now it value is 20
+    var x = 20; // here our x is shadowed and now it value is 20
     console.log(x) // 20
 }
 console.log(x) // 20 , Why we are getting 20 here 
@@ -57,7 +57,7 @@ let t = 20;
 function x() {
     var t = 20; // SyntaxError : identifier 't' has already been declared
 }
-// WE can shodow let using let and const using const
+// WE can shadow let using let and const using const
 // We cannot shadow let using var but we can shadow var using let
 var h = 20;
 {

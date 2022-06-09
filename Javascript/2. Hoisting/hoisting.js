@@ -18,5 +18,5 @@ function getName(){
 // So our 5th line will throw an error as we are calling an undefined
 // var getName = function () {}  // this will also get undefined because
 // this will aslo act as variable like arrow function and we know for varibales
-// we get undefined during memory allocation
+// we get undefined during memory allocation and calling an udefined gives error
 

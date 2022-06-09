@@ -37,7 +37,7 @@
 
          // Now after running above process completely our whole execution context will now be completely deleted.
 // Now undefined of square4 is replaced by value 16
-// And finally after running above process completely our whole global execution context will alos be completely deleted.
+// And finally after running above process completely our whole global execution context will also be completely deleted.
 
 var n = 2;
 function square (num) {
