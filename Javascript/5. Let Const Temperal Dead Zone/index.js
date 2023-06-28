@@ -9,7 +9,7 @@ let a =10 // in case of let , memory  is allocated but in different/seperate spa
 // Temporaal Dead zone is a time since when this let varibale was hoisted and till it is initialized with some value 
 // the time between this is known as temporal dead zone
 
-//if we write window.b/this.b in console then we get value 10 becasue our b is attached to window object
+//if we write window.b/this.b in console then we get value 100 becasue our b is attached to window object
 // But if we do window.a/this.a then it gives undefined because our a is not in global object as it is in a script (separate space)
 
 // In case of let we cannot redeclared the same varibale in the same SCOPE

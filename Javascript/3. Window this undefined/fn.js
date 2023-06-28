@@ -8,10 +8,13 @@ function a(){
     console.log(x);
 }
 
+
 function b(){
     var x = 100;
     console.log(x);
 }
+
+console.log(x);//1
 
 //---------------------------------------------------------------
 // The shortest js code is empty file. And when we debug it in inspect

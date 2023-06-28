@@ -39,8 +39,8 @@ function z(){
 // But what if interviwer asked you to not use let and do it with var only
 // Solution is closure , as the problem with var was that it is changing the same reference , so to make separate copy 
 // of each i we will use closure and enclose our setTimeout in another function.
-function z(){
-    for(let i =1; i<=5; i++){  
+function e(){
+    for(var i =1; i<=5; i++){  
         function close(x){
             setTimeout(function(){
                 console.log(x)
@@ -50,4 +50,4 @@ function z(){
     }
     console.log("Hello Vishal")
 }
-z()
+e()

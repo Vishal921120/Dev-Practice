@@ -8,9 +8,9 @@ console.log(getName); // f getName() { console.log("Hare Krishna")}
 
 var x =3; // If we remove this line then our console.log(x) above gets an error that x is not defined
 
-function getName(){
-    console.log("Hare Krishna")
-}
+// function getName(){
+//     console.log("Hare Krishna")
+// }
 
 // if we make our getName an arrow fucntion 
 // var getName = () => {console.log("Hare Krishna")}

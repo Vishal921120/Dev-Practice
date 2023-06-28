@@ -17,13 +17,13 @@
 // })
 
 // Event listeners
-// let clicked = document.getElementById("click")
-// clicked.addEventListener("click",click) // here second argument click is our callback fn
-// function click(){
-//     console.log("button clicked")
-//     let heading = document.getElementById("heading")
-//     heading.innerText = "hello Vishal"
-// }
+let clicked = document.getElementById("click")
+clicked.addEventListener("click",click) // here second argument click is our callback fn
+function click(){
+    console.log("button clicked")
+    let heading = document.getElementById("heading")
+    heading.innerText = "hello Vishal"
+}
 
 // Now we want to make a counter
 // let count = 0
