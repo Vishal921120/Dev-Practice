@@ -3,13 +3,16 @@
 
 function e(){
     a();
+    console.log("not found in e")
     function a(){
         // Now js engine will try to find b in local memory of 
         // a's execution context.
-        console.log(b);
+        console.log("inside a",b);
         c()
+        console.log("not found in a")
         function c(){
-            console.log(b); // if don't use b here then it will  not create closure
+            console.log("inside c",b); // if don't use b here then it will  not create closure
+            console.log("not found in c")
         }
     }
 }
